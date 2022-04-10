@@ -31,6 +31,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		deathSoundName = 'fnf_loss_sfx';
 		loopSoundName = 'gameOver';
 		endSoundName = 'gameOverEnd';
+	}
 
 	public function new(x:Float, y:Float, camX:Float, camY:Float, state:PlayState)
 	{
