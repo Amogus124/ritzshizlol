@@ -36,9 +36,6 @@ class GameOverSubstate extends MusicBeatSubstate
 	  addVirtualPad(NONE, A_B);
     #end
 
-		super.create();
-	}
-
 	public function new(x:Float, y:Float, camX:Float, camY:Float, state:PlayState)
 	{
 		lePlayState = state;
