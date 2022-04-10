@@ -32,10 +32,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		loopSoundName = 'gameOver';
 		endSoundName = 'gameOverEnd';
 
-    #if android
-	  addVirtualPad(NONE, A_B);
-    #end
-
 	public function new(x:Float, y:Float, camX:Float, camY:Float, state:PlayState)
 	{
 		lePlayState = state;
