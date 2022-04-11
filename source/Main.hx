@@ -31,6 +31,8 @@ class Main extends Sprite
 	{
 		super();
 
+ 	  SUtil.gameCrashCheck();
+
 		if (stage != null)
 		{
 			init();
@@ -72,6 +74,8 @@ class Main extends Sprite
 		Paths.getModFolders();
 		ClientPrefs.startControls();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
+		
+		SUtil.doTheCheck();
 
 		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);
