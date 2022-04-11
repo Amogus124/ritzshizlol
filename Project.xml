@@ -120,6 +120,9 @@
 	<haxelib name="faxe" if='switch'/>
 	<haxelib name="extension-videoview" if="android"/>
   <haxelib name="AndroidTools" if="android"/>
+  
+  <config:android permission="android.permission.READ_EXTERNAL_STORAGE" if="android"/>
+  <config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" if="android"/>
 
 	<!--<haxelib name="polymod"/> -->
 	<haxelib name="discord_rpc" if="desktop"/>
